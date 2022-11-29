@@ -1,0 +1,113 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HTML ---------------------------------*/
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 24px;
+    padding: 1em 2em;
+    background-color: #a29bfe;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+button:active {
+    background-color: #beb9ff;
+}
+
+/* Container ----------------------------*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Cell ---------------------------------*/
+.cell {
+    background: #ccc;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: white;
+    transition: 0.5s;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+/* Cell 1 -------------------------------*/
+.cell:nth-child(1) {
+    background-color: #00b894;
+}
+
+.cell:nth-child(1):active, .on {
+    background-color: #55efc4;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+/* Cell 2 -------------------------------*/
+.cell:nth-child(2) {
+    background-color: #0984e3;
+}
+
+.cell:nth-child(2):active, .on {
+    background-color: #74b9ff;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+/* Cell 3 -------------------------------*/
+.cell:nth-child(3) {
+    background-color: #fdcb6e;
+}
+
+.cell:nth-child(3):active, .on {
+    background-color: #ffeaa7;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+/* Cell 4 -------------------------------*/
+.cell:nth-child(4) {
+    background-color: #d63031;
+}
+
+.cell:nth-child(4):active, .on {
+    background-color: #ff7675;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
